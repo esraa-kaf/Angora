@@ -1,5 +1,25 @@
 /* @path style.css */
 
+/* تغيير لون الرابط النشط */
+.navbar-nav .nav-link.active {
+    color: #ff305b !important; 
+   
+}
+
+.footer-copyright{
+    text-align: end;
+}
+
+
+.carousel-item.active .animate__bounceInRight {
+    /* display: inline-block;  */
+    animation-name: bounceInRight;
+    animation-duration: 4s;
+}
+.carousel-item h1{
+    font-size: 70px;
+    font-weight: 500;
+}
 .navbar{
     z-index: 5;
 }
@@ -49,6 +69,11 @@ ul li a i:hover{
     border: 1px solid #fff; /* إطار أبيض كما في الصورة */
     opacity: 1;
     border-radius: 3px;
+   
+}
+.carousel-control-prev-icon ,.carousel-control-next-icon {
+    background-image:none !important;
+    
 }
 
 /* السهم العلوي */
@@ -138,7 +163,6 @@ height: 1px;
 
 .imgCard img {
     width: 100%;
-    height: 400px;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -401,6 +425,9 @@ ul li a{
     color: #f25454 !important;
 
 }
+.footer-links{
+    text-align: start;
+}
 @media (max-width: 767px) {
     .footer-copyright, p.Copyright {
         text-align: center !important;
@@ -411,12 +438,36 @@ ul li a{
     .button-contact h4{
         margin: auto;
     }
+   .carousel-indicators button{
+    width: 60px !important;
+    height:60px !important;
+} 
+.carousel-indicators .active{
+    width: 80px !important;
+    height: 80px !important;
+} 
+.footer-copyright , .footer-links{
+    text-align: center;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .button-contact h4{
         margin: auto;
     }
     .text h1{
+    text-align: center;
+} 
+   .carousel-indicators button{
+    width: 80px !important;
+    height: 80px !important;
+} 
+.carousel-indicators .active{
+    width: 100px !important;
+    height: 100px !important;
+}
+
+
+.footer-copyright , .footer-links{
     text-align: center;
 }
 }
