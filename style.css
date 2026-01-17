@@ -1,0 +1,422 @@
+/* @path style.css */
+
+.navbar{
+    z-index: 5;
+}
+ul li a{
+    color:white !important;
+}
+ul li a i:hover{
+    color:#f25454!important;
+}
+
+.padd {
+    padding: 75px 0 !important;
+}
+.main-heading {
+    width: 60%;
+}
+.main-heading h2 {
+    position: relative;
+    font-size: 2.5rem;
+    margin: 20px 0 15px;
+}
+.main-heading h2::before {
+    content: attr(data);
+    position: absolute;
+    font-size: 4.5rem;
+    color: #000;
+    top: -70%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .06;
+}
+
+/* الحاوية التي تجمع السهمين */
+.carousel {
+    position: relative;
+}
+
+/* تعديل مكان الأزرار لتكون في الجانب */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    left: 0; /* لجعلها في جهة اليسار */
+    right: auto;
+    width: 40px; /* عرض الزر */
+    height: 50px; /* طول الزر */
+    background-color: rgba(255, 255, 255, 0.1); /* خلفية شفافة خفيفة */
+    border: 1px solid #fff; /* إطار أبيض كما في الصورة */
+    opacity: 1;
+    border-radius: 3px;
+}
+
+/* السهم العلوي */
+.carousel-control-prev {
+    top: 40%; /* التحكم في الارتفاع */
+}
+
+/* السهم السفلي */
+.carousel-control-next {
+    top: calc(40% + 50px); /* يوضع مباشرة تحت السهم الأول */
+}
+
+/* لإلغاء التنسيقات الافتراضية لـ Bootstrap التي تمدد الأزرار */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(255, 255, 255, 0.886);
+}
+.carousel-control-prev-icon:hover , .carousel-control-next-icon:hover{
+    color: #f07676 !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+
+.line{
+width: 50px;
+height: 1px;
+  
+}
+.lead{
+    color: #999;
+    font-weight: 400;
+    font-size: 23px;
+}
+.info{
+    font-size: 18px;
+   color:#888686 ; 
+}
+.progress {
+    height: 4px;
+    overflow: visible !important;
+}
+.progress-bar {
+    position: relative;
+    background-color: #f25454 !important;
+    overflow: visible !important;
+    color: #888686 !important;
+    transition: 3s width;
+}
+.progress-bar::before {
+    font-size: 1rem;
+    content: attr(data-par);
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+.percentages span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.imgCard{
+    
+    position: relative;
+}
+
+.imgCard .overlay{
+    position: absolute;
+    left: 0;
+    top: 0px;;
+    border-radius:5px;
+    right: 0;
+    background-color:rgba(247, 8, 8,.5);
+    height: 0;
+    display: none ;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.imgCard:hover .overlay{
+    height: 100%;
+    display: flex !important;
+
+}
+
+
+.imgCard img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.imgCard img:hover{
+    transform: scale(1.1);
+}
+.cardInfo h3 {
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.cardInfo span {
+    font-size: 20px;
+    color: #777;
+     
+}
+.card:hover .cardInfo h3{
+    color:#f25454;
+}
+.card:hover .imgCard img{
+    transform: scale(1.1);
+}
+.imgCard {
+    overflow: hidden;
+}
+.card .cardInfo h3  , .imgCard img , .imgCard .overlay{
+    transition: all .3s;
+}
+
+
+.button-contact h4{
+    background-color:#f07676;
+    width: 50%;
+    padding: 10px 8px;
+    text-align: center;
+    border-radius: 10px;
+    color: #ffff;
+    font-size: 18px;
+}
+
+ .services-section {
+             padding: 20px 0; 
+            }
+        
+        .section-title h2 {
+            font-weight: 700;
+            font-size: 40PX;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+  
+        .section-title h2::after {
+            content: "";
+            width: 50px;
+            height: 2px;
+            background: #181818;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-subtitle {
+            color: #777;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .service-box { 
+            margin-bottom: 40px;
+         }
+
+        .service-icon {
+            color:#f25454;
+            font-size: 35PX;
+            margin-right: 30px;
+        }
+
+        .service-content h5 {
+            font-weight: 600;
+            font-size: 20PX;
+            margin-bottom: 10px;
+        }
+
+        .service-content p {
+            color: #6c757d;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+
+.carousel-indicators button:nth-child(1){
+
+  background-image:url(./imges/client-1.png) ;
+  
+}
+.carousel-indicators button:nth-child(2){
+
+  background-image:url(./imges/client-2.png) ;
+  
+}
+.carousel-indicators button:nth-child(3){
+
+  background-image:url(./imges/client-3.png) ;
+  
+}
+.carousel-indicators button:nth-child(4){
+
+  background-image:url(./imges/client-4.png) ;
+}
+
+.carousel-indicators button:nth-child(5){
+  /* width: 100px !important;
+  height: 100px !important;
+  border-radius: 50% !important; */
+  background-image:url(./imges/client-5.png) ;
+  
+}
+
+.carousel-indicators .active {
+    background-color: #fff !important; /* لون أبيض صريح */
+    width: 140px !important;
+    height: 140px !important;
+    border: 3px solid #f25454;
+}
+
+
+.carousel-indicators button{
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50% !important;
+    background-position: center;
+    background-size: cover;  
+}
+
+#carouselExampleDark {
+  position: static;
+}
+
+.carousel-indicators {
+  position: static !important;
+margin-bottom: 0px;
+}
+
+
+.carousel-caption {
+  position: static !important;
+  transform: none !important;
+  color: #000;
+ 
+}
+
+.carousel-item p{
+color: #787575;
+    font-size: 17px;
+    font-weight: 400;
+}
+.carousel-item h5{
+    font-size: 23px;
+    font-weight: 500;
+}
+.Touch{
+    background-color:#fafafa;
+}
+.Touch .text h4:hover{
+color: #f25454;
+transition: .4s;
+}
+.text p a{
+    color: #888686;
+    font-size: 18px;
+}
+.text  p  a:hover{
+color: #f25454;
+
+}
+.form-control{
+    border:2px solid #e7e5e5 !important;
+}
+::placeholder {
+  color: #cdcbcb  !important;
+  opacity: 1; 
+}
+.button-contact{
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+   
+}
+.button-touch{
+    background-color: #f07676;
+       color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.footer {
+    /* height: 70vh; */
+    color: #fff;
+    position: relative;
+    background: #222;
+    background-image: url(./imges/dotted-map.png);
+    background-size: cover;
+    background-position: center center;
+    
+}
+.text-footer .btn{
+    color: #fff;
+    border:1px solid #fff;
+
+}
+.text-footer .btn:hover{
+    color:#f25454;
+    border:1px solid #f25454;
+
+}
+.footer-item a:hover{
+color: #f25454 !important;
+
+}
+.footer-item a{
+color: #f9f7f7 !important;
+
+}
+ul{
+    padding-left: 4px;
+}
+ul li a:hover{
+    color: #f25454 !important;
+}
+ul li {
+    list-style: none;
+
+}
+ul li a{
+    text-decoration: none;
+}
+.Angora p{
+    color: #d3d3d3;
+}
+
+.Angora a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.Angora a:hover{
+    color: #f25454;
+}
+.links i:hover{
+    color: #f25454 !important;
+
+}
+@media (max-width: 767px) {
+    .footer-copyright, p.Copyright {
+        text-align: center !important;
+    }
+.text h1{
+    text-align: center;
+}
+    .button-contact h4{
+        margin: auto;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .button-contact h4{
+        margin: auto;
+    }
+    .text h1{
+    text-align: center;
+}
+}
